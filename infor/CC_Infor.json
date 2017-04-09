@@ -1,0 +1,43 @@
+
+{
+	"status":1,
+	"infor":[
+			{
+				"name":"新闻网",
+				"url":"http://news.lzu.edu.cn/",
+				"des":"兰州大学新闻网",
+				"icon":""
+			},
+			{
+				"name":"校报",
+				"url":"http://lzu.cuepa.cn/",
+				"des":"兰州大学报",
+				"icon":""
+			},
+			{
+				"name":"微博",
+				"url":"http://weibo.com/u/1878134457?c=spr_qdhz_bd_baidusmt_weibo_s",
+				"des":"兰州大学官方微博",
+				"icon":""
+			},
+			{
+				"name":"微信号",
+				"url":"null",
+				"des":"iLZU1909",
+				"icon":""
+			},
+			{
+				"name":"萃英在线",
+				"url":"http://cyonline.lzu.edu.cn/",
+				"des":"兰州大学·萃英在线",
+				"icon":""
+			},
+			{
+				"name":"西北望BBS",
+				"url":"http://bbs.lzu.edu.cn/nForum/#!default",
+				"des":"兰州大学bbs论坛",
+				"icon":""
+			}
+	]
+	
+}

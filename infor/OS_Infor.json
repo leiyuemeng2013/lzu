@@ -1,0 +1,67 @@
+
+{
+	"status":1,
+	"infor":[
+			{
+				"name":"图书馆",
+				"url":"http://lib.lzu.edu.cn/",
+				"des":"Lanzhou University Library",
+				"icon":""
+			},
+			{
+				"name":"档案馆",
+				"url":"http://archives.lzu.edu.cn/",
+				"des":"LZU·ARCHIVES",
+				"icon":""
+			},
+			{
+				"name":"博物馆",
+				"url":"http://bwg.lzu.edu.cn/",
+				"des":"MUSEUM OF LANZHOU UNIVERSITY",
+				"icon":""
+			},
+			{
+				"name":"出版社",
+				"url":"http://www.onbook.com.cn/",
+				"des":"兰州大学·出版社",
+				"icon":""
+			},
+			{
+				"name":"学报编辑部",
+				"url":"http://xuebao.lzu.edu.cn/",
+				"des":"兰州大学·学术期刊集群",
+				"icon":""
+			},
+			{
+				"name":"通信网络中心",
+				"url":"http://its.lzu.edu.cn/",
+				"des":"公共设施中心、通信网络中心",
+				"icon":""
+			},
+			{
+				"name":"科技园办",
+				"url":"http://lzusp.lzu.edu.cn/",
+				"des":"兰州大学·科技园",
+				"icon":""
+			},
+			{
+				"name":"后勤集团",
+				"url":"http://ldhq.lzu.edu.cn/",
+				"des":"兰州大学·后勤集团",
+				"icon":""
+			},
+			{
+				"name":"资产经营有限公司",
+				"url":"http://chanye.lzu.edu.cn/",
+				"des":"兰州大学·资产经营有限公司",
+				"icon":""
+			},
+			{
+				"name":"科技开发公司",
+				"url":"http://kjkf.lzu.edu.cn/",
+				"des":"兰州兰大科技开发有限公司",
+				"icon":""
+			}
+	]
+	
+}

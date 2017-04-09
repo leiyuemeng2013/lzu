@@ -1,0 +1,28 @@
+{
+  "detail.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/detail.js",
+      "js/mui.min.js"
+    ]
+  },
+  "index.html": {
+    "resources": [
+      "infor/PS_Infor.json",
+      "infor/CC_Infor.json",
+      "infor/SA_Infor.json",
+      "css/app.css",
+      "js/mui.min.js",
+      "infor/AD_Infor.json",
+      "infor/US_Infor.json",
+      "css/mui.min.css",
+      "infor/CS_Infor.json",
+      "infor/OS_Infor.json",
+      "js/index.js"
+    ],
+    "refer": [
+      "detail.html"
+    ]
+  }
+}

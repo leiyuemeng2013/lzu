@@ -1,0 +1,43 @@
+
+{
+	"status":1,
+	"infor":[
+			{
+				"name":"兰州大学",
+				"url":"http://www.lzu.edu.cn/",
+				"des":"",
+				"icon":""
+			},
+			{
+				"name":"教务在线",
+				"url":"http://jwk.lzu.edu.cn/academic/common/security/login.jsp",
+				"des":"",
+				"icon":""
+			},
+			{
+				"name":"学工网登录",
+				"url":"http://xgb.lzu.edu.cn/AdminLogin.aspx",
+				"des":"",
+				"icon":""
+			},
+			{
+				"name":"信息服务门户登录",
+				"url":"http://my.lzu.edu.cn/login.portal",
+				"des":"",
+				"icon":""
+			},
+			{
+				"name":"智慧一卡通登录",
+				"url":"http://ecard.lzu.edu.cn/",
+				"des":"",
+				"icon":""
+			},
+			{
+				"name":"邮箱登录",
+				"url":"http://pubmail.lzu.edu.cn/?cus=1",
+				"des":"",
+				"icon":""
+			}
+	]
+	
+}

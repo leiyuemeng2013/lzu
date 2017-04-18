@@ -1,28 +1,52 @@
 {
-  "detail.html": {
-    "resources": [
-      "fonts/mui.ttf",
-      "css/mui.min.css",
-      "js/detail.js",
-      "js/mui.min.js"
-    ]
-  },
-  "index.html": {
-    "resources": [
-      "infor/PS_Infor.json",
-      "infor/CC_Infor.json",
-      "infor/SA_Infor.json",
-      "css/app.css",
-      "js/mui.min.js",
-      "infor/AD_Infor.json",
-      "infor/US_Infor.json",
-      "css/mui.min.css",
-      "infor/CS_Infor.json",
-      "infor/OS_Infor.json",
-      "js/index.js"
-    ],
-    "refer": [
-      "detail.html"
-    ]
-  }
+	"detail.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/detail.js",
+			"js/mui.min.js"
+		],
+		"refer": []
+	},
+	"index.html": {
+		"resources": [
+			"infor/PS_Infor.json",
+			"infor/CC_Infor.json",
+			"infor/SA_Infor.json",
+			"css/app.css",
+			"js/mui.min.js",
+			"infor/AD_Infor.json",
+			"infor/US_Infor.json",
+			"css/mui.min.css",
+			"infor/CS_Infor.json",
+			"infor/OS_Infor.json",
+			"js/index.js"
+		],
+		"refer": [
+			"detail.html"
+		]
+	},
+	"main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"index.html",
+			"guide.html"
+		]
+	},
+	"guide.html": {
+		"resources": [
+			"img/muwu.jpg",
+			"img/yuantiao.jpg",
+			"img/cbd.jpg",
+			"css/mui.min.css",
+			"img/shuijiao.jpg"
+		],
+		"refer": [
+			"main.html",
+			"index.html"
+		]
+	}
 }

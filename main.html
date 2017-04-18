@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body　style="background-color: #000000;">
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function() {
+				/**
+				 * 获取本地存储中launchFlag的值
+				 * 若存在，说明不是首次启动，直接进入首页；
+				 * 若不存在，说明是首次启动，进入引导页；
+				 */
+				var launchFlag = plus.storage.getItem("launchFlag");
+				if(launchFlag) {
+					mui.openWindow({
+						url: "index.html",
+						id: "index",
+						extras: {}
+					});
+				} else {
+					mui.openWindow({
+						url: "guide.html",
+						id: "guide"
+					});
+				}
+			});
+		</script>
+	</body>
+
+</html>

@@ -8,39 +8,89 @@
 		<link href="../css/mui.min.css" rel="stylesheet" />
 	</head>
 	<style type="text/css">
-		.main{
-			position: flex;
-			flex-direction: row;
+		.main {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
 			background-color: red;
 			align-items: center;
 		}
-		.main li{
-			list-style-type: none;
-			width: 100px;
-			height: 100px;
-			margin: 15px;
-			background-color: green;
-			
-		}
 		
+		.main li {
+			list-style-type: none;
+			width: 44%;
+			height: 150px;
+			margin:  0;
+			background-color: green;
+			color: black;
+			
+			text-align: center;
+			line-height: 150px;
+			font-size: 12px;
+		}
+		li:nth-child(4n){
+			-webkit-border-top-left-radius: 100%;
+			-webkit-border-bottom-right-radius: 100%;
+		}
+		li:nth-child(4n+3){
+			border-bottom-left-radius: 100%;
+			border-top-right-radius: 100%;
+		}
+		li:nth-child(4n+1){
+			-webkit-border-top-left-radius: 100%;
+			-webkit-border-bottom-right-radius: 100%;
+		}
+		li:nth-child(4n+2){
+			border-bottom-left-radius: 100%;
+			border-top-right-radius: 100%;
+		}
 	</style>
 
 	<body>
-		<div class="main">
-			<li><a href="">这是我的地1个son</a></li>
-			<li><a href="">这是我的地2个son</a></li>
-			<li><a href="">这是我的地3个son</a></li>
-			<li><a href="">这是我的地4个son</a></li>
-			<li><a href="">这是我的地5个son</a></li>
-			<li><a href="">这是我的地6个son</a></li>
-			<li><a href="">这是我的地7个son</a></li>
-			<li><a href="">这是我的地8个son</a></li>
-			<li><a href="">这是我的地9个son</a></li>
-			<li><a href="">这是我的地10个son</a></li>
-			<li><a href="">这是我的地11个son</a></li>
-			<li><a href="">这是我的地12个son</a></li>
-			<li><a href="">这是我的地13个son</a></li>
-		</div>
+		<ul class="main">
+			<li>
+				<a href="">蘭州大學</a>
+			</li>
+			<li>
+				<a href="">这是我的地2个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地3个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地4个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地5个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地6个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地7个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地8个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地9个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地10个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地11个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地12个son</a>
+			</li>
+			<li>
+				<a href="">这是我的地13个son</a>
+			</li>
+		</ul>
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()

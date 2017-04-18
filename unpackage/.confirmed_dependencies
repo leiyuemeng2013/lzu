@@ -20,7 +20,8 @@
 			"css/mui.min.css",
 			"infor/CS_Infor.json",
 			"infor/OS_Infor.json",
-			"js/index.js"
+			"js/index.js",
+			"img/yuantiao.jpg"
 		],
 		"refer": [
 			"detail.html"

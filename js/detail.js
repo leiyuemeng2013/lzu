@@ -26,21 +26,16 @@ window.addEventListener('goDetail', function(event) {
 	mui.plusReady(function (){
 		//获取子页面
 		var subPage = plus.webview.currentWebview().children()[0];
+		
 		console.log(subPage);
 		var aaa = plus.webview.currentWebview().children()[0].evalJS("var meta = document.createElement('meta');meta.setAttribute('name','viewport');meta.setAttribute('content','width=device-width,initial-scale=0.5, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes');document.getElementsByTagName('head')[0].appendChild(meta);");
-		console.log(aaa);
+	
 		//定义事件监听返回按钮　　关闭子页面　从新加载父页面
 		mui(".mui-bar").on('tap','a',function () {
-			console.log('tap66666666666666666');
+			//console.log('tap66666666666666666');
 			plus.webview.close(subPage);
 			plus.webview.currentWebview().reload();
 		});
-		
-		//plus.android.importClass("android.webkit.WebView").getSettings().setJavaScriptEnabled(true);
-//		var settings = zoom.getSettings();
-//      	settings.setJavaScriptEnabled(true);
-//      	settings.setSupportZoom(true);
-//      	settings.setBuiltInZoomControls(true);
 	});
 	
 });

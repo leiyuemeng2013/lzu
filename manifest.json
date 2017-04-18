@@ -215,7 +215,8 @@
 					"infor/CS_Infor.json",
 					"infor/OS_Infor.json",
 					"js/index.js",
-					null
+					null,
+					"img/yuantiao.jpg"
 				],
 				"refer": [
 					"detail.html"

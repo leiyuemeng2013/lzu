@@ -46,19 +46,27 @@ function pullListener(index, container) {
 		//为这一列创建其中的cell，并放入这一列的dataArr中
 		for(var i = 0; i < data.infor.length; i++) {
 
-			addCell(container, data.infor[i]);
+			addCell(container, data.infor[i],data.infor.length>8?true:false);
 
 		}
 	});
 }
 
-function addCell(container, data) {
+function addCell(container, data,flage) {
 
+	container.querySelector(".mui-table-view").appendChild(template(data,flage));
+}
+
+//创建一个模板
+function template (data,flage) {
 	//创建cell的最外层
 	var li = document.createElement('li');
-
-	li.setAttribute('class', 'mui-table-view-cell mui-media');
-
+	
+	if (flage) {
+		li.setAttribute('class', 'mui-table-view-cell mui-media');
+	} else{
+		
+	}
 	//创建a,并为其添加一个index属性用于存放cell的id
 	var a = document.createElement('a');
 
@@ -66,11 +74,12 @@ function addCell(container, data) {
 	a.setAttribute('data_url', data.url);
 	a.setAttribute('data_name', data.name);
 	a.innerHTML = data.name;
-
+	
 	li.appendChild(a);
-	//将cell添加到容器中
-	container.querySelector(".mui-table-view").appendChild(li);
+	
+	return li;
 }
+
 
 mui.plusReady(function() {
 	//预加载详情页页面	

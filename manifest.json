@@ -6,7 +6,7 @@
 		"name": "1.0.0",/*应用版本名称*/
 		"code": "83"
 	},
-	"description": "兰州大学门户导航",/*应用描述信息*/
+	"description": "兰州大学子域名导航",/*应用描述信息*/
 	"icons": {
 		"72": "icon.png"
 	},
@@ -106,7 +106,7 @@
 	"plus": {
 		"splashscreen": {
 			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
-			"waiting": true,"delay":"10"
+			"waiting": false,"delay":"10"
 		},
 		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
@@ -166,7 +166,7 @@
 				"ios": {
 					"iphone": {
 						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
-						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina35": "C:/Users/lym/Desktop/splash.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
 						"retina40": ""
 					},
 					"ipad": {
@@ -183,9 +183,9 @@
 				"android": {
 					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
 					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
-					"hdpi": "C:/Users/lym/Desktop/leilei.png", /*高分屏启动图片，分辨率：480x762*/
-					"xhdpi": "C:/Users/lym/Desktop/leilei.png", /*720P高分屏启动图片，分辨率：720x1242*/
-					"xxhdpi": "C:/Users/lym/Desktop/leilei.png"
+					"hdpi": "C:/Users/lym/Desktop/splash.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "C:/Users/lym/Desktop/splash.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "C:/Users/lym/Desktop/splash.png"
 				}
 			}
 		}
@@ -240,7 +240,10 @@
 					"img/yuantiao.jpg",
 					"img/cbd.jpg",
 					"css/mui.min.css",
-					"img/shuijiao.jpg"
+					"img/shuijiao.jpg",
+					"img/guide2.png",
+					"img/guide1.png",
+					"img/guide3.png"
 				],
 				"refer": [
 					"main.html",
@@ -256,5 +259,10 @@
 				"css/mui.css"
 			]
 		}
-	},"fullscreen":true
+	},"fullscreen":true,
+	"unpackage":[
+	  "css/detail.css",
+	  "css/mui.css",
+	  "js/mui.js"
+	]
 }

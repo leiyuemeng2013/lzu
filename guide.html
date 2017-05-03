@@ -20,6 +20,8 @@
 				bottom: 40px;
 				width: 60%;
 				left: 20%;
+				border-radius: 5px;
+				background-color: mintcream;
 			}
 		</style>
 	</head>
@@ -30,29 +32,23 @@
 				<div class="mui-slider-group">
 					<div class="mui-slider-item">
 						<a href="javascript:;">
-							<img class="guide-img" src="img/cbd.jpg">
+							<img class="guide-img" src="img/guide1.png">
 						</a>
 					</div>
 					<div class="mui-slider-item">
 						<a href="javascript:;">
-							<img class="guide-img" src="img/muwu.jpg">
+							<img class="guide-img" src="img/guide2.png">
 						</a>
 					</div>
 					<div class="mui-slider-item">
 						<a href="javascript:;">
-							<img class="guide-img" src="img/shuijiao.jpg">
-						</a>
-					</div>
-					<div class="mui-slider-item">
-						<a href="javascript:;">
-							<img class="guide-img" src="img/yuantiao.jpg">
+							<img class="guide-img" src="img/guide3.png">
 							<button class="mui-btn mui-btn-blue mui-btn-outlined" type="button" id="start">开始体验</button>
 						</a>
 					</div>
 				</div>
 				<div class="mui-slider-indicator">
 					<div class="mui-indicator mui-active"></div>
-					<div class="mui-indicator"></div>
 					<div class="mui-indicator"></div>
 					<div class="mui-indicator"></div>
 				</div>
@@ -98,7 +94,14 @@
 			/**
 			 * 重写mui.back()，什么都不执行，反之用户返回到入口页；
 			 */
-			mui.back = function(e) {};
+			mui.back = function() {
+				var btnArray = ['取消', '确定'];
+				mui.confirm('         是否退出应用？？', '       LzuGo提示您', btnArray, function(e) {
+					if(e.index == 1) {
+						plus.runtime.quit();
+					}
+				})
+			};
 		</script>
 	</body>
 

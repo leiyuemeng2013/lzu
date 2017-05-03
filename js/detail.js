@@ -36,6 +36,10 @@ window.addEventListener('goDetail', function(event) {
 			plus.webview.close(subPage);
 			plus.webview.currentWebview().reload();
 		});
+		
+		
+		
 	});
+	
 	
 });
